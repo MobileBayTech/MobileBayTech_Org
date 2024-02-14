@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Siracha&display=swap');
+
+
+
+
+html, body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    --dark-bg: rgb(91, 1, 91);
+    --light-bg: rgb(231, 231, 231);
+    --golden: goldenrod;
+    background-color: var(--dark-bg);
+    color: var(--golden);
+    font-family: 'Siracha', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    background-color: var(--light-bg);
+    margin: 0;
+    /* padding: 0.25rem; */
+    overflow: hidden;
+
+}
+
+ul.nav {
+    list-style-type: none;
+    margin: 1.5rem 2rem -1rem 0rem;
+}
+
+li.nav {
+    display: inline;
+    color: var(--dark-bg);
+    text-align: center;
+    padding: 10px;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    border: var(--dark-bg) solid 1px;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    background-color: var(--light-bg);
+    font-family: 'Siracha', 'Arial Narrow', Arial, sans-serif;
+    transition: 0.3s ease-in-out
+}
+
+li.nav:hover {
+    border: var(--dark-bg) solid 1px;
+    color: var(--golden);
+    background-color: var(--dark-bg);
+}
+
+li.active {
+    border: var(--dark-bg) solid 1px;
+    color: var(--golden);
+    background-color: var(--dark-bg);
+}
+
+div.menu_links {
+    margin:0 2rem 0.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#menu_slack {
+    width: 8rem;
+    margin: 0.35rem 0.5rem 0 0;
+}
+
+#menu_github {
+    width: 2.25rem;
+    margin: 0.35rem 0.5rem 0 0;
+}
+
+div.hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--dark-bg);
+    font-family: 'Siracha', 'Arial Narrow', Arial, sans-serif;
+    color: goldenrod;
+
+}
+div.hero_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+    color: goldenrod;
+    max-width: 50%;
+    padding: 1rem;
+
+}
+
+
+div.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border-radius: 0.5rem;
+    padding: 0.25rem;
+    margin:0.5rem;
+    max-width: 19rem;
+    background-color: goldenrod;
+    color: var(--dark-bg);
+}
+
+img.icon {
+    width: 4rem;
+}
+
+div.hero h1 {
+    font-family: 'Audiowide', Courier, monospace;
+    padding:0;
+    margin:0;
+}
+
+span.logo {
+    font-size: 1.5rem;
+    padding:0;
+    margin:0;
+}
+
+p.hero_md {
+    font-size: 2rem;
+    padding: -1rem 2rem 1rem 2rem;
+    margin:0 1.25rem;
+}
+
+button.hero {
+    text-decoration: none;
+    background-color: var(--dark-bg);
+    color: var(--golden);
+    border: var(--golden) 1px solid;
+    border-radius: 1rem;
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin:0rem 0.5rem 0rem 1.25rem;
+    transition: 0.3s ease-in-out
+}
+
+button.hero:hover {
+    text-decoration: none;
+    background-color: var(--golden);
+    color: var(--dark-bg);
+    border: var(--golden) 1px solid;
+    /* box-shadow: 0 0 10px 0 white inset, 0 0 10px 4px white; */
+}
+
+
+
+div.hero_right {
+    max-width: 13%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+}
+p.hero_sm {
+    font-size: 1.5rem;
+    padding:0;
+    margin:0;
+}
+
+img.slack_btn_big {
+    width: 10rem;
+}
+
+main {
+    max-width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin:0 auto;
+    /* border: blue solid 1px; */
+}
+
+h1.main {
+    font-family: 'Audiowide', Courier, monospace;
+    font-weight: 300;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* border: red solid 1px; */
+}
