@@ -11,6 +11,7 @@ html, body{
     --dark-bg: rgb(91, 1, 91);
     --light-bg: rgb(231, 231, 231);
     --golden: goldenrod;
+    --secondary: green;
     background-color: var(--light-bg);
     color: var(--golden);
     font-family: 'Siracha', 'Arial Narrow', Arial, sans-serif;
@@ -22,6 +23,13 @@ body {
     justify-content: space-between;
     align-content: flex-start;
 }
+
+::selection {
+    background-color: black;
+    color: var(--golden);
+}
+
+
 
 div.mobileHeader {
     display: none;
@@ -166,6 +174,7 @@ div.hero h1 {
     font-family: 'Audiowide', Courier, monospace;
     padding:0;
     margin:0;
+
 }
 
 span.logo {
@@ -327,11 +336,12 @@ footer {
     div.logo {
         display: flex;
         flex-direction: row;
+        flex-wrap: nowrap;
         justify-content: flex-start;
         border-radius: 0.5rem;
         padding: 0.25rem;
         margin:0 auto;
-        /* max-width: 19rem; */
+        /* min-width: 21rem; */
         background-color: goldenrod;
         color: var(--dark-bg);
     }
@@ -342,7 +352,7 @@ footer {
     
     div.hero h1 {
         font-family: 'Audiowide', Courier, monospace;
-
+        font-size: 1.5rem;
         padding:0;
         margin:0;
     }
