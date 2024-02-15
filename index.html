@@ -1,59 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" href="/images/m2.jpg">
-        <title>Mobile Bay Tech Event Calendar</title>
-    
-        <meta property="og:url"                content="https://mobilebaytech.org/" />
-        <meta property="og:type"               content="website" />
-        <meta property="og:title"              content="Mobile Bay Event Calendar" />
-        <meta property="og:description"        content="A community and calendar of technology user groups and meetups around Mobile Bay in Alabama." />
-        <meta property="og:image"              content="https://louisvilletech.org/images/m2.jpg" />
-    
-        <link rel="stylesheet" href="css/main.css">
-      </head>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./images/m2.jpg">
+    <title>Mobile Bay Tech Community</title>
+
+    <meta property="og:url"                content="https://mobilebaytech.org/" />
+    <meta property="og:type"               content="website" />
+    <meta property="og:title"              content="Mobile Bay Tech Community" />
+    <meta property="og:description"        content="A community and calendar of technology user groups and meetups around Mobile Bay in Alabama." />
+    <meta property="og:image"              content="https://mobilebaytech.org/images/m2.jpg" />
+
+    <link rel="stylesheet" href="css/main.css" />
+</head>
 <body>
+    <nav>
+        <div class="mobileHeader">
+            <button class="hamburger" onclick="openMenu()">Menu</button>
+            <ul class="m-nav">
+                <li id="m-calendar" class="nav active" onclick="pageUpdate(id)">Calender</li>
+                <li id="m-tech_groups" class="nav" onclick="pageUpdate(id)">Tech Groups</li>
+                <li id="m-jobs" class="nav" onclick="pageUpdate(id)">Job Listings</li>
+                <li id="m-conferences" class="nav" onclick="pageUpdate(id)">Conferences</li>
+                <li id="m-conduct" class="nav" onclick="pageUpdate(id)">Code of Conduct</li>
+                <li id="m-changes" class="nav" onclick="pageUpdate(id)">Submit Changes</li>
+            </ul>
+        </div>
+        <ul class="nav">
+            <li id="calendar" class="nav active" onclick="pageUpdate(id)">Calender</li>
+            <li id="tech_groups" class="nav" onclick="pageUpdate(id)">Tech Groups</li>
+            <li id="jobs" class="nav" onclick="pageUpdate(id)">Job Listings</li>
+            <li id="conferences" class="nav" onclick="pageUpdate(id)">Conferences</li>
+            <li id="conduct" class="nav" onclick="pageUpdate(id)">Code of Conduct</li>
+            <li id="changes" class="nav" onclick="pageUpdate(id)">Submit Changes</li>
+        </ul>
+        <div class="menu_links">
+            <a href="https://github.com/MobileBayTech/MobileBayTech_Org" target="_blank" class="img_a">
+                <img src="images/github-mark.png" alt="GitHub" id="menu_github" />
+            </a>
+            <a href="https://join.slack.com/t/mobilebaytech/shared_invite/zt-2crj7ah83-ml5zgr5OGBoe4eKaKi6hXQ" target="_blank" class="img_a">
+                <img src="images/btn-add-to-slack.svg" alt="Slack" id="menu_slack" />
+            </a>
+        </div>
+    </nav>
 
-<nav>
-    <ul class="nav">
-        <li class="nav active">Calender</li>
-        <li class="nav">Tech Groups</li>
-        <li class="nav">Job Listings</li>
-        <li class="nav">Conferences</li>
-    </ul>
-    <div class="menu_links">
-        <img src="images/github-mark.png" alt="GitHub" id="menu_github" />
-        <img src="images/btn-add-to-slack.svg" alt="Slack" id="menu_slack" />
+    <div class="target">
+        <div class="hero">
+            <div class="hero_left">
+                <div class="logo"><h1>MobileBayTech</h1><span class="logo">.org</span></div>
+                <p class="hero_md">A consolidated directory and calendar of technology user groups and meetups around the Mobile Bay Area in Alabama.</p>
+            </div>
+            <div class="hero_right">
+                <p class="hero_sm">Request an invitation on our Slack team to join the conversation:</p>
+                <a href="https://join.slack.com/t/mobilebaytech/shared_invite/zt-2crj7ah83-ml5zgr5OGBoe4eKaKi6hXQ" target="_blank" class="img_a">
+                    <img src="images/btn-add-to-slack.svg" alt="Button to join Slack" class="slack_btn_big"/>
+                </a>
+            </div>
+        </div>
+        <main>
+            <H1 class="main">Tech Event Calendar</H1>
+        </main>
     </div>
-</nav>
-
-<div class="hero">
-    <div class="hero_left">
-        <div class="logo"><h1>MobileBayTech</h1><span class="logo">.org</span></div>
-        <p class="hero_md">A consolidated directory and calendar of technology user groups and meetups around Mobile Bay in Alabama.</p>
-        <p class="links">
-            <button class="hero">Code of Conduct</button>
-            <button class="hero">How to Submit Changes</button>
-        </p>
-    </div>
-    <div class="hero_right">
-        <p class="hero_sm">Request an invitation on our Slack team to join the conversation:</p>
-        <img src="images/btn-add-to-slack.svg" alt="Button to join Slack" class="slack_btn_big"/>
-
-    </div>
-</div>
-
-<main>
-<H1 class="main">Tech Event Calendar</H1>
-</main>
-
-<footer>
-<p>Copyright &copy;2024 MobileBayTech</p>
-</footer>
-
-    
+    <footer>
+        <p>Released under the MIT license in 2024 by MobileBayTech.org</p>
+    </footer>
+    <script src="javascript/main.js"></script>
 </body>
 </html>
