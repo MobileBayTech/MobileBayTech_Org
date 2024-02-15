@@ -7,7 +7,6 @@ function loadHTML(newTabId, targetDiv) {
 }
 
 async function pageUpdate(newTabId){
-    console.log(currentTabId)
     let m_newTabId
     let m_currentTabId
 
@@ -40,14 +39,12 @@ async function pageUpdate(newTabId){
     loadHTML(newTabId, targetDiv);
     
     openMenu()
-    console.log(currentTabId)
 }
 
 const menu = document.querySelector(".m-nav");
 let open;
 
 function openMenu() {
-    console.log("CLICKS")
   if (open) {
     menu.style.display = "none";
     open = false;
