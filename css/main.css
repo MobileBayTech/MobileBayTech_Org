@@ -305,6 +305,105 @@ footer {
 
     }
 
+
+
+    div.hero {
+        /* display: flex; */
+        flex-direction: column;
+        /* justify-content: center; */
+        /* align-items: center;
+        background-color: var(--dark-bg);
+        font-family: 'Siracha', 'Arial Narrow', Arial, sans-serif;
+        color: var(--golden); */
+        padding: 0rem 0;
+        margin-bottom: 1rem;
+    }
+    div.hero_left {
+        font-size: 1rem;
+        max-width: 95%;
+        padding: 1rem;
+    }
+    
+    div.logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        border-radius: 0.5rem;
+        padding: 0.25rem;
+        margin:0 auto;
+        max-width: 19rem;
+        background-color: goldenrod;
+        color: var(--dark-bg);
+    }
+    
+    /* img.icon {
+        width: 4rem;
+    } */
+    
+    div.hero h1 {
+        font-family: 'Audiowide', Courier, monospace;
+
+        padding:0;
+        margin:0;
+    }
+    
+    span.logo {
+        font-size: 1.5rem;
+        padding:0;
+        margin:0;
+    }
+    
+    p.hero_md {
+        font-size: 2rem;
+        padding: -1rem 2rem 1rem 2rem;
+        margin:0 1.25rem;
+    }
+    
+    /* button.hero {
+        text-decoration: none;
+        background-color: var(--dark-bg);
+        color: var(--golden);
+        border: var(--golden) 1px solid;
+        border-radius: 1rem;
+        font-size: 1rem;
+        padding: 0.5rem;
+        margin:0rem 0.5rem 0rem 1.25rem;
+        transition: 0.3s ease-in-out
+    }
+    
+    button.hero:hover {
+        text-decoration: none;
+        background-color: var(--golden);
+        color: var(--dark-bg);
+        border: var(--golden) 1px solid;
+        /* box-shadow: 0 0 10px 0 white inset, 0 0 10px 4px white; 
+    } */
+    
+    div.hero_right {
+        max-width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items:center;
+        margin: 0 2rem;
+    }
+    p.hero_sm {
+        font-size: 1.5rem;
+        padding:0;
+        margin-bottom:1rem;
+    }
+    
+    img.slack_btn_big {
+        width: 10rem;
+        margin-bottom: 1rem;
+    }
+
+
+
+
+
+
+
     main {
         width: 90%;
     }
