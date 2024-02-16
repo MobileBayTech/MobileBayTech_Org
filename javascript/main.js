@@ -41,16 +41,25 @@ async function pageUpdate(newTabId){
     openMenu()
 }
 
-const menu = document.querySelector(".m-nav");
+// const menu = document.querySelector("ul.m-nav");
+const menuDiv = document.querySelector("div.m-nav");
+
 let open;
 
 function openMenu() {
 
   if (open) {
-    menu.style.visibility = "hidden";
+    console.log("CLICK - close")
+    // menuDiv.style.visibility = "hidden";
+    menuDiv.style.animation = "slide-out 1s ease-in-out;"
+
+    menuDiv.style.display = "none";
     open = false;
   } else if (!open) {
-    menu.style.visibility = "visible";
+    console.log("CLICK - open")
+    // menu.style.visibility = "visible";
+    menuDiv.style.display = "flex";
+    menuDiv.style.animation = "slide-in 1s ease-in-out;"
     open = true;
   }
 }
