@@ -45,11 +45,12 @@ const menu = document.querySelector(".m-nav");
 let open;
 
 function openMenu() {
+
   if (open) {
-    menu.style.display = "none";
+    menu.style.visibility = "hidden";
     open = false;
   } else if (!open) {
-    menu.style.display = "flex";
+    menu.style.visibility = "visible";
     open = true;
   }
 }
