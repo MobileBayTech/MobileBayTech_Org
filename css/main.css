@@ -118,6 +118,9 @@ div.menu_links {
     border: none;
     
 }
+div.m-logo {
+    display: none;
+}
 
 div.target {
     overflow-y:auto;
@@ -270,8 +273,9 @@ footer {
     div.mobileHeader {
         display:flex;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content:baseline;
         align-content: center;
+        /* border: green solid 1px; */
     }
 
     button.hamburger {
@@ -288,7 +292,12 @@ footer {
     nav {
         width: 100%;
         z-index: 2;
-        align-items: flex-start;
+        align-items:baseline;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        /* border: orange solid 1px; */
     }
 
     ul.nav {
@@ -314,7 +323,43 @@ footer {
 
     }
 
+    a.img_a {
+        display: none;
+    }
+    div.menu_links{
+        /* border: green solid 1px; */
+        padding:0.5rem;
+        margin:0 2rem;
+    }
+    div.m-logo {
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        padding: 0.25rem 1.5rem;
+        border: var(--dark-bg) double 1px ;
+        border-radius: 0.5rem;
+        background-color: var(--golden);
+    }
 
+    div.m-logo h1 {
+        margin: 0;
+        padding:0;
+        color: var(--dark-bg);
+
+        font-size: 1.5rem;
+        font-family: 'Audiowide', Courier, monospace;
+        
+        color: var(--dark-bg);
+    }
+    
+    span.m-logo {
+        font-size: 1.5rem;
+        padding:0;
+        margin:0;
+        color:var(--dark-bg);
+
+    }
 
     div.hero {
         /* display: flex; */
@@ -334,17 +379,17 @@ footer {
     }
     
     div.logo {
-        display: flex;
-        flex-direction: row;
+        display: none;
+        /* flex-direction: row;
         flex-wrap: nowrap;
         justify-content: center;
         align-items: baseline;
         border-radius: 0.5rem;
         padding: 0.25rem;
         margin:0 auto;
-        /* min-width: 21rem; */
+
         background-color: goldenrod;
-        color: var(--dark-bg);
+        color: var(--dark-bg); */
     }
     
     /* img.icon {
@@ -358,11 +403,11 @@ footer {
         margin:0;
     }
     
-    span.logo {
+    /* span.logo {
         font-size: 1.5rem;
         padding:0;
         margin:0;
-    }
+    } */
     
     p.hero_md {
         font-size: 2rem;
