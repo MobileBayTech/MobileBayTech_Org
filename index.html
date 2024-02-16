@@ -20,14 +20,16 @@
     <nav>
         <div class="mobileHeader">
             <button class="hamburger" onclick="openMenu()">Menu</button>
-            <ul class="m-nav">
-                <li id="m-calendar" class="nav active" onclick="pageUpdate(id)">Calender</li>
-                <li id="m-tech_groups" class="nav" onclick="pageUpdate(id)">Tech Groups</li>
-                <li id="m-jobs" class="nav" onclick="pageUpdate(id)">Job Listings</li>
-                <li id="m-conferences" class="nav" onclick="pageUpdate(id)">Conferences</li>
-                <li id="m-conduct" class="nav" onclick="pageUpdate(id)">Code of Conduct</li>
-                <li id="m-changes" class="nav" onclick="pageUpdate(id)">Submit Changes</li>
-            </ul>
+            <div class="m-nav">
+                <!-- <ul class="m-nav"> -->
+                    <div id="m-calendar" class="m-nav-item active" onclick="pageUpdate(id)"><p>Calender</p></div>
+                    <div id="m-tech_groups" class="m-nav-item" onclick="pageUpdate(id)"><p>Tech Groups</p></div>
+                    <div id="m-jobs" class="m-nav-item" onclick="pageUpdate(id)"><p>Job Listings</p></div>
+                    <div id="m-conferences" class="m-nav-item" onclick="pageUpdate(id)"><p>Conferences</p></div>
+                    <div id="m-conduct" class="m-nav-item" onclick="pageUpdate(id)"><p>Code of Conduct</p></div>
+                    <div id="m-changes" class="m-nav-item" onclick="pageUpdate(id)"><P>Submit Changes</p></div>
+                <!-- </ul> -->
+            </div>
         </div>
 
         <ul class="nav">
